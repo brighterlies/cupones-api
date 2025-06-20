@@ -21,4 +21,7 @@ Mejorar la calidad del código mediante pruebas de regresión actualizadas, TDD,
 ## Capturas de pantalla
 - Las capturas de pantalla del test fallando (regresión) y del test funcionando 
 (corregido) se encuentran en la carpeta `screenshots`.
-- La captura del workflow corriendo en GitHub Actions también se encuentra en `screenshots`.
+- La captura del workflow corriendo en `GitHub Actions` también se encuentra en `screenshots`.
+
+## Resumen:
+- Aplicamos pruebas unitarias a la lógica de cupones y detectamos un error al eliminar el cupón `"BIENVENIDA"`. Lo restauramos y validamos nuevamente. Automatizamos el proceso con `GitHub Actions` para prevenir futuras regresiones y mantener la calidad del sistema.

@@ -23,6 +23,9 @@ jobs:
           source venv/bin/activate
           pip install -r requirements.txt
 
+      - name: Establecer PYTHONPATH
+        run: echo "PYTHONPATH=$PWD" >> $GITHUB_ENV
+
       - name: Ejecutar pruebas
         run: |
           source venv/bin/activate
